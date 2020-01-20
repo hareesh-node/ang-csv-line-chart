@@ -17,7 +17,7 @@ angular.module('myApp', ['ngFileUpload', 'chart.js'])
         // prepare dynamic json
         vm.labels = [];
         // prepare labels
-        Object.keys(vm.seriesData.json).forEach(function (value) {
+        Object.keys(vm.seriesData.json).forEach((value) => {
             vm.seriesData.json[value].forEach((val) => {
                 if (vm.labels.indexOf(val.year) === -1) {
                     vm.labels.push(val.year);
@@ -29,11 +29,11 @@ angular.module('myApp', ['ngFileUpload', 'chart.js'])
         vm.series = Object.keys(vm.seriesData.json);
         // prepare data
         vm.data = [];
-        Object.keys(vm.seriesData.json).forEach(function (value) {
+        Object.keys(vm.seriesData.json).forEach((value) => {
             
             let sData = [];
             
-            vm.labels.forEach(function(label) {
+            vm.labels.forEach((label) => {
                 
                 let sVal = vm.seriesData.json[value].find((series) => series.year === label) || { score: 0 };
                 
