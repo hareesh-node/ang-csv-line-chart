@@ -7,6 +7,8 @@ angular.module('myApp', ['ngFileUpload', 'chart.js'])
         sValue: ""
     };
     
+    console.log(newData);
+    
     // select file
     vm.selectFile = function (file) {
         vm.selectedFile = file;
