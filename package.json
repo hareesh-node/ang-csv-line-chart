@@ -1,0 +1,22 @@
+{
+  "name": "ang-csv-line-chart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hareesh-node/ang-csv-line-chart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hareesh-node/ang-csv-line-chart/issues"
+  },
+  "homepage": "https://github.com/hareesh-node/ang-csv-line-chart#readme",
+  "dependencies": {
+    "lint-staged": "^10.0.0"
+  }
+}

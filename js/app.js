@@ -7,8 +7,6 @@ angular.module('myApp', ['ngFileUpload', 'chart.js'])
         sValue: ""
     };
     
-    console.log(newData);
-    
     // select file
     vm.selectFile = function (file) {
         vm.selectedFile = file;
@@ -81,6 +79,7 @@ angular.module('myApp', ['ngFileUpload', 'chart.js'])
         let regex = /^([a-zA-Z0-9\s_\\.\-:])+(.csv|.txt)$/;
         if (!vm.selectedFile) {
             alert("Select csv file");
+            return;
         }
         if (regex.test(vm.selectedFile.name.toLowerCase())) {
             if (typeof (FileReader) !== "undefined") {
